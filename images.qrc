@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="images">
+    <file>Images/athlete_stages.png</file>
+    <file>Images/field.png</file>
+  </qresource>
+</RCC>

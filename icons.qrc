@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>restart.png</file>
+    <file>fast.png</file>
+    <file>play_pause_red.png</file>
+    <file>slow.png</file>
+  </qresource>
+</RCC>
