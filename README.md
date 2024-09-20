@@ -1,5 +1,5 @@
 
-#The Javelin-Throwing Project is dedicated to the development of advanced tools and simulations for the precise analysis and optimization of javelin throwing techniques. By leveraging data-driven methodologies and computational modeling, the project aims to enhance athletic performance and provide actionable insights into biomechanics and technique improvement.
+The Javelin-Throwing Project is dedicated to the development of advanced tools and simulations for the precise analysis and optimization of javelin throwing techniques. By leveraging data-driven methodologies and computational modeling, the project aims to enhance athletic performance and provide actionable insights into biomechanics and technique improvement.
 
 
 
