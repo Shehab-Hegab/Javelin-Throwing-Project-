@@ -1,6 +1,5 @@
 # 🏋️‍♂️ Javelin Throwing Analysis and Simulation
 
-**Repository:** [Shehab-Hegab/Javelin-Throwing-Project](https://github.com/Shehab-Hegab/Javelin-Throwing-Project-)
 
 ---
 
