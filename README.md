@@ -1,88 +1,105 @@
-## 🏋️‍♂️ Javelin Throwing Analysis and Optimization
+# 🏋️‍♂️ Javelin Throwing Analysis and Simulation
 
 **Repository:** [Shehab-Hegab/Javelin-Throwing-Project](https://github.com/Shehab-Hegab/Javelin-Throwing-Project-)
 
-### Overview
+---
 
-This project focuses on the biomechanical analysis and optimization of javelin throwing techniques. By leveraging computer vision and data analysis, it aims to enhance athletic performance through precise motion tracking and feedback.
+## 📌 Overview
 
-### Key Features
+This project offers a comprehensive system to analyze, simulate, and optimize javelin throwing techniques through two main components:
 
-* **Video Analysis:** Processes videos of javelin throws to extract motion data.
-* **Pose Estimation:** Utilizes pose estimation algorithms to identify key body landmarks.
-* **Performance Metrics:** Calculates angles, velocities, and other metrics critical to javelin throwing.
-* **Visualization:** Generates visual feedback to assist athletes and coaches in technique improvement.
+1. **🎮 Physics-Based Simulation:**  
+   A GUI-based simulator that models projectile motion using real physics equations.  
+   Users can adjust speed, angle, and observe the resulting throw in real time.
 
-### Technologies Used
+2. **📹 Video Analysis and Biomechanics:**  
+   A vision-based tool using pose estimation and computer vision to analyze athlete movements, extract performance metrics, and assist in technique improvement.
 
-* **Programming Language:** Python
-* **Libraries:** OpenCV, MediaPipe, NumPy, Matplotlib
-* **Computer Vision Techniques:** Pose estimation, optical flow analysis
-
-### Installation
-
-1. **Clone the Repository:**
-
-   ```bash
-   git clone https://github.com/Shehab-Hegab/Javelin-Throwing-Project-.git
-   cd Javelin-Throwing-Project-
-   ```
-
-2. **Install Dependencies:**
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Run Analysis Script:**
-
-   ```bash
-   python analyze_throw.py
-   ```
-
-### Results
-
-Provided detailed biomechanical insights into javelin throwing techniques, enabling targeted improvements and performance optimization.
-
-### Future Work
-
-* **Machine Learning Integration:** Apply machine learning models to predict optimal throwing techniques.
-* **Real-Time Feedback:** Develop systems for real-time performance feedback during training sessions.
-* **Broader Application:** Extend analysis tools to other athletic disciplines requiring biomechanical assessment.
+Together, these tools aim to bridge the gap between science and sport, empowering athletes, coaches, and educators to understand and improve javelin throwing performance.
 
 ---
 
-These README templates are structured to highlight the technical depth and leadership qualities pertinent to a Senior Staff Technical Lead Manager role. They emphasize your ability to manage complex projects, integrate advanced technologies, and contribute to impactful solutions.
+## 🎮 Features – Simulation Module
 
-If you need further customization or assistance with other projects, feel free to ask!
+- **Modern PyQt5 GUI** with sliders for angle, speed, and animation speed.
+- **Live Matplotlib Plot** of the javelin's trajectory.
+- **Game Stats**: Displays max height, total distance, and flight time.
+- **Olympic-Styled UI** with vector icons and stadium visuals.
+- **Fullscreen Support** via button or `F11`.
+- **Real Physics**: Uses motion equations without air resistance for educational clarity.
 
+---
 
+## 📹 Features – Video Analysis Module
 
-The Javelin-Throwing Project is dedicated to the development of advanced tools and simulations for the precise analysis and optimization of javelin throwing techniques. By leveraging data-driven methodologies and computational modeling, the project aims to enhance athletic performance and provide actionable insights into biomechanics and technique improvement.
+- **Pose Estimation** using MediaPipe to extract body landmarks.
+- **Angle & Velocity Analysis** based on athlete’s movement during the throw.
+- **Visual Feedback** through annotated images and trajectories.
+- **Targeted Technique Suggestions** based on biomechanical findings.
 
+---
 
+## 🔬 Scientific Background
 
+The simulation and analysis are grounded in real-world physics and biomechanics:
 
-##
+### ⚙️ Physics Used in Simulation
 
+- **Equations of Motion:**
+  - \( x = v_0 \cos\theta \cdot t \)
+  - \( y = v_0 \sin\theta \cdot t - \frac{1}{2}gt^2 \)
+  - Range (no drag): \( R = \frac{v_0^2 \sin(2\theta)}{g} \)
 
+- **Optimal Angle (Theory vs. Reality):**
+  - Theoretical max: **45°**
+  - Real-world (Olympic): **32°–36°**, due to javelin aerodynamics
 
+- **Speeds:**
+  - Elite male javelin throwers: up to **36 m/s**
+  - Female athletes: **25–30 m/s**
+  - World record (Men): **98.48 m** | (Women): **72.28 m**
 
-![WhatsApp Image 2024-05-07 at 03 57 40_836f7366](https://github.com/Shehab-Hegab/Javelin-Throwing-Project-/assets/137138481/d6c712b7-ec57-4c54-88bc-4e5f9df45bdb)
+> Note: Air resistance and lift are not included in the simulation, leading to higher distances than reality.
 
+---
 
-##
-![area](https://github.com/Shehab-Hegab/Javelin-Throwing-Project-/assets/137138481/9434878d-bdbe-4831-963e-455892a5b3b3)
-![field](https://github.com/Shehab-Hegab/Javelin-Throwing-Project-/assets/137138481/a09d5eb4-9444-4d30-9f29-bbd3feb2b2cf)
-![athlete_stages](https://github.com/Shehab-Hegab/Javelin-Throwing-Project-/assets/137138481/324fc85e-1731-4299-9cc0-3f820f85fdc0)
+## 🧪 Real vs. Simulated Comparison
 
-##
+| Metric              | Real World (Olympics)       | Simulation Module                |
+|---------------------|-----------------------------|----------------------------------|
+| Distance Record      | 98.48 m (men) / 72.28 m     | ~100 m (no air resistance)       |
+| Optimal Angle        | 32°–36°                     | Slider (30°–90°)                 |
+| Release Speed        | 28–36 m/s                   | Slider (5–40 m/s)                |
+| Air Drag / Lift      | Yes                         | No (for clarity/education)       |
 
-![WhatsApp Image 2024-05-10 at 19 16 46_a2c3f581](https://github.com/Shehab-Hegab/Javelin-Throwing-Project-/assets/137138481/8ba6a632-0fe3-419c-8c14-ce872e3beabd)
+---
 
-![WhatsApp Image 2024-05-10 at 19 16 46_a45db794](https://github.com/Shehab-Hegab/Javelin-Throwing-Project-/assets/137138481/2b44ba35-3e9b-4a38-b49c-f773b5116943)
+## 🧰 Technologies Used
 
+| Component             | Library/Tool       | Purpose                            |
+|----------------------|--------------------|-------------------------------------|
+| GUI + Simulation      | **PyQt5**           | GUI layout, sliders, buttons        |
+| Plotting              | **Matplotlib**      | Live throw path visualization       |
+| Physics / Math        | **NumPy**           | Trigonometry and calculations       |
+| Image Handling        | **Pillow (PIL)**    | Icons and background images         |
+| Video Analysis        | **OpenCV**          | Video processing, drawing           |
+| Pose Estimation       | **MediaPipe**       | Detecting joints and angles         |
 
-![WhatsApp Image 2024-05-10 at 19 16 47_37354912](https://github.com/Shehab-Hegab/Javelin-Throwing-Project-/assets/137138481/7c219241-b9db-4be6-9e18-84bdb032a597)
+---
 
+## 🖼️ Screenshots & Visuals
 
+![Simulation Screenshot](https://github.com/Shehab-Hegab/Javelin-Throwing-Project-/assets/137138481/d6c712b7-ec57-4c54-88bc-4e5f9df45bdb)
+![Pose Estimation](https://github.com/Shehab-Hegab/Javelin-Throwing-Project-/assets/137138481/324fc85e-1731-4299-9cc0-3f820f85fdc0)
+![Throw Field Area](https://github.com/Shehab-Hegab/Javelin-Throwing-Project-/assets/137138481/a09d5eb4-9444-4d30-9f29-bbd3feb2b2cf)
+
+---
+
+## 🚀 Getting Started
+
+### ▶️ Simulation Module
+
+1. Install Python 3.x
+2. Install dependencies:
+   ```bash
+   pip install PyQt5 matplotlib numpy pillow
