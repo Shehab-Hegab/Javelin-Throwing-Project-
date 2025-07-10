@@ -92,6 +92,8 @@ The simulation and analysis are grounded in real-world physics and biomechanics:
 ![Simulation Screenshot](https://github.com/Shehab-Hegab/Javelin-Throwing-Project-/assets/137138481/d6c712b7-ec57-4c54-88bc-4e5f9df45bdb)
 ![Pose Estimation](https://github.com/Shehab-Hegab/Javelin-Throwing-Project-/assets/137138481/324fc85e-1731-4299-9cc0-3f820f85fdc0)
 ![Throw Field Area](https://github.com/Shehab-Hegab/Javelin-Throwing-Project-/assets/137138481/a09d5eb4-9444-4d30-9f29-bbd3feb2b2cf)
+<img width="1918" height="1078" alt="Screenshot 2025-07-10 231918" src="https://github.com/user-attachments/assets/142a846b-7493-4114-89f0-abaea56cf8c9" />
+
 
 ---
 
